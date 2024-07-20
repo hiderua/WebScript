@@ -70,8 +70,6 @@
     var observer2 = new MutationObserver(callback2);
     observer2.observe(document.querySelector("body > div.is-full.main-container > div"), observerOptions);
 
-    document.querySelector("body > div:nth-child(10)").remove();
-    document.querySelector("body > div:nth-child(11)").remove();
     document.querySelector("body > div.is-full.main-container > div > div.ba41f266a2df89da021e334deed7f3665").remove();
     document.querySelector("body > div.footer.is-full").remove();
     document.querySelector("body > div.is-full.main-container > div > div.search-box > div.bd76a918083af37c04dae4dac71aadcb8").remove();
