@@ -63,6 +63,9 @@
             document.querySelector("body > div.is-full.main-container > div > div.bottom-articles > div:nth-child(2)").remove()
             document.querySelector("body > div.is-full.main-container > div > div.bottom-articles > div:nth-child(2)").remove();
             document.querySelector("body > div.is-full.main-container > div > div.bottom-articles > div:nth-child(2)").remove();
+            document.querySelector("body > div.is-full.main-container > div > div.article.content > div.article-fulltext > div:nth-child(11)").remove()
+            document.querySelector("body > div.is-full.main-container > div > div.article.content > div.article-fulltext > div:nth-child(11)").remove()
+            document.querySelector("body > div.is-full.main-container > div > div.article.content > div.article-fulltext > div:nth-child(11)").remove()
         } else { document.querySelector("body > div.is-full.main-container > div > div.content").remove(); }
 
     };
