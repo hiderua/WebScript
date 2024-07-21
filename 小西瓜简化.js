@@ -1,7 +1,7 @@
 // ==UserScript==
 // @name         小西瓜网页精简
 // @namespace    http://tampermonkey.net/
-// @version      2024-07-20
+// @version      2024-07-22
 // @description  try to take over the world!
 // @author       You
 // @match        https://buondua.com/*
@@ -85,9 +85,22 @@
     var observer2 = new MutationObserver(callback2);
     observer2.observe(document.querySelector("body > div.is-full.main-container > div"), observerOptions);
 
-    document.querySelector("body > div.is-full.main-container > div > div.ba41f266a2df89da021e334deed7f3665").remove();
+    //document.querySelector("body > div.is-full.main-container > div > div.ba41f266a2df89da021e334deed7f3665").remove();
+    try{
+        document.querySelector("body > div.is-full.main-container > div > div.search-box").lastElementChild.remove();
+        document.querySelector("body > div.is-full.main-container > div > div.search-box").lastElementChild.remove();
+        document.querySelector("body > div.is-full.main-container > div > div.search-box").lastElementChild.remove();
+        document.querySelector("body > div.is-full.main-container > div > div.search-box").lastElementChild.remove();
+    }catch(TypeError){
+    }
+
+    try{
+        document.querySelector("body > div.is-full.main-container > div").lastElementChild.remove();
+        document.querySelector("body > div.is-full.main-container > div").lastElementChild.remove();
+        document.querySelector("body > div.is-full.main-container > div").lastElementChild.remove()
+    }catch(TypeError){}
     document.querySelector("body > div.footer.is-full").remove();
-    document.querySelector("body > div.is-full.main-container > div > div.search-box > div.bd76a918083af37c04dae4dac71aadcb8").remove();
+    // document.querySelector("body > div.is-full.main-container > div > div.search-box > div.bd76a918083af37c04dae4dac71aadcb8").remove();
     document.querySelector("body > script:nth-child(1)").remove();
 
 
