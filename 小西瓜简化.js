@@ -55,17 +55,29 @@
 
     if (document.querySelector("body > div.is-full.main-container > div > div.content") != null) {
         if (document.querySelector("body > div.is-full.main-container > div > div.content").className == 'article content') {
-            document.querySelector("body > div.is-full.main-container > div > div.article.content > div:nth-child(10)").remove()
-            document.querySelector("body > div.is-full.main-container > div > div.article.content > div:nth-child(10)").remove()
-            document.querySelector("body > div.is-full.main-container > div > div.article.content > div:nth-child(10)").remove()
-            document.querySelector("body > div.is-full.main-container > div > div:nth-child(4)").remove();
-            document.querySelector("body > div.is-full.main-container > div > div:nth-child(4)").remove();
-            document.querySelector("body > div.is-full.main-container > div > div.bottom-articles > div:nth-child(2)").remove()
-            document.querySelector("body > div.is-full.main-container > div > div.bottom-articles > div:nth-child(2)").remove();
-            document.querySelector("body > div.is-full.main-container > div > div.bottom-articles > div:nth-child(2)").remove();
-            document.querySelector("body > div.is-full.main-container > div > div.article.content > div.article-fulltext > div:nth-child(11)").remove()
-            document.querySelector("body > div.is-full.main-container > div > div.article.content > div.article-fulltext > div:nth-child(11)").remove()
-            document.querySelector("body > div.is-full.main-container > div > div.article.content > div.article-fulltext > div:nth-child(11)").remove()
+            try {
+                document.querySelector("body > div.is-full.main-container > div > div.article.content > div:nth-child(10)").remove()
+                document.querySelector("body > div.is-full.main-container > div > div.article.content > div:nth-child(10)").remove()
+                document.querySelector("body > div.is-full.main-container > div > div.article.content > div:nth-child(10)").remove()
+            } catch (TypeError) { };
+            try {
+                document.querySelector("body > div.is-full.main-container > div > div:nth-child(4)").remove();
+                document.querySelector("body > div.is-full.main-container > div > div:nth-child(4)").remove();
+            } catch (TypeError) { };
+            try {
+                document.querySelector("body > div.is-full.main-container > div > div.bottom-articles > div:nth-child(2)").remove()
+                document.querySelector("body > div.is-full.main-container > div > div.bottom-articles > div:nth-child(2)").remove();
+                document.querySelector("body > div.is-full.main-container > div > div.bottom-articles > div:nth-child(2)").remove();
+            } catch (TypeError) { };
+            try {
+                document.querySelector("body > div.is-full.main-container > div > div.article.content > div.article-fulltext > div:nth-child(11)").remove()
+                document.querySelector("body > div.is-full.main-container > div > div.article.content > div.article-fulltext > div:nth-child(11)").remove()
+                document.querySelector("body > div.is-full.main-container > div > div.article.content > div.article-fulltext > div:nth-child(11)").remove()
+            } catch (TypeError) { };
+
+
+
+
         } else { document.querySelector("body > div.is-full.main-container > div > div.content").remove(); }
 
     };
